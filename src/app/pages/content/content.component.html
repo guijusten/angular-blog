@@ -1,17 +1,16 @@
 <div class="container__content">
-  <div class="content__cover">
-    <img src="{{ photoCover }}" alt="" srcset="">
-  </div>
   <div class="content__description">
     <a [routerLink]="['']"> << VOLTAR </a>
   </div>
   <div class="container__list">
     <ul class="movie-list">
-      <li *ngFor="let movie of movies">
-        <div *ngIf="(movie.id == id)">
-          {{movie.name}}
-        </div>
-      </li>
+      <div *ngFor="let movie of movies">
+        <li *ngIf="movie.id == id">
+          <img src="{{ movie.photoCover }}" alt="{{ movie.name }}" />
+          {{ movie.name }}
+          {{ movie.year }}
+        </li>
+      </div>
     </ul>
   </div>
 </div>
