@@ -40,6 +40,13 @@
 
 ul.movie-list {
   list-style-type: none;
+
+  display: flex;
+
+  @media (max-width: 940px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 a {
@@ -60,4 +67,30 @@ a {
 a:hover {
   color: black;
   background: white;
+}
+
+li {
+  /* border: 2px solid white; */
+
+  background-color: rgb(12, 187, 100, 0.3);
+
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: 12px 12px 12px 12px;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+li:hover {
+  padding: 16px 16px;
+  cursor: pointer;
+  background-color: rgb(12, 187, 100, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.4);
+}
+
+li > img {
+  width: 100px;
 }
