@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "FallingSky";
+  src: url("../../assets/Font-FallingSky.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  color: white;
+  background-color: rgb(12, 187, 100);
+
+  /* padding: 0.5rem 1rem 0.5rem 1rem; */
+  padding: 0.25rem 0.6rem;
+  border-radius: 8px;
+
+  transition: all 0.3s linear;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "FallingSky";
+}
+
+a:hover {
+  color: black;
+  background: white;
+}
